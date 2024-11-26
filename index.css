@@ -1,0 +1,238 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* Navbar */
+.navbar {
+    width: 100%;
+    background-color: #F7F7F7;
+    border-bottom: 1px solid #ddd;
+}
+
+.container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto; /* Center alignment */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+/* Logo */
+.home_texnomart {
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.home_texnomart a {
+    color: black;
+    text-decoration: none;
+    padding-left: -10px; /* This won't affect anything; negative padding isn't valid */
+}
+
+/* Center: Filter and Search */
+.center {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.btn__katalog {
+    width: 131px;
+    height: 44px;
+    border: none;
+    background-color: #FBC100;
+    border-radius: 12px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn__katalog:hover {
+    background-color: #e0a800;
+}
+
+.center input {
+    width: 500px;
+    height: 44px;
+    border: 2px solid #FBC100;
+    border-radius: 12px;
+    padding-left: 10px;
+    font-size: 16px;
+}
+
+/* Right: Navigation Links */
+.right ul {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.right ul li a {
+    font-size: 18px;
+    color: black;
+    transition: color 0.3s;
+}
+
+.right ul li a:hover {
+    color: #FBC100;
+}
+
+/* Bottom Menu */
+.bottom {
+    padding: 10px 0;
+}
+
+.bottom ul {
+    display: flex;
+    flex-wrap: wrap; /* Flexible layout */
+    gap: 15px;
+    margin-left: 40px;
+    justify-content: center;
+}
+
+.bottom ul li a {
+    font-size: 14px;
+    color: black;
+    padding: 5px 5px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.bottom ul li a:hover {
+    background-color: #FBC100;
+    color: white;
+}
+
+/* Carousel */
+.carousel-inner .carousel-item {
+    width: 1920px;
+    transform: translateX(370px);
+    margin-top: 30px;
+}
+
+.carousel-inner .carousel-item img {
+    border-radius: 30px;
+}
+
+.section_header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 40px;
+    padding: 20px;
+}
+
+/* Section Title */
+.section_header h2 {
+    width: 100%;
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Product Card */
+.sectionBox {
+    width: 280px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.sectionBox:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.sectionBoxImg {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    background-color: rgba(8, 9, 10, 0.03);
+}
+
+/* Product Title and Price */
+.sectionTitle h2 {
+    font-size: 18px;
+    margin: 15px 0 5px;
+    color: #333;
+}
+
+.sectionTitle p {
+    font-size: 14px;
+    color: #777;
+    margin: 0;
+}
+
+.sectionPrice {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.sectionPrice h3 {
+    font-size: 16px;
+    font-weight: 700;
+    color: #000;
+}
+
+/* Add to Cart Button */
+.btn_shop {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 48px;
+    height: 38px;
+    border: 2px solid #fbc100;
+    background-color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn_shop:hover {
+    background-color: #fbc100;
+}
+
+.btn_shop a {
+    color: black;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.btn_shop:hover a {
+    color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .center input {
+        width: 70%;
+        font-size: 14px;
+    }
+
+    .btn__katalog {
+        width: 100px;
+        font-size: 14px;
+    }
+
+    .right ul {
+        gap: 16px;
+    }
+
+    .bottom ul {
+        gap: 10px;
+    }
+}
