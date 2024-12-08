@@ -215,8 +215,24 @@
 .btn_shop:hover a {
     color: white;
 }
+.brend_section {
+    width: 1488px;
+    height: 114;
+    margin-left: 215px;
+    margin-top: 35px;
+}
+.brend_cards {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
 
-/* Responsive Design */
+
+.brend_cards .brend_card {
+    width: 195px;
+    height: 64px;
+}
+
 @media (max-width: 768px) {
     .center input {
         width: 70%;
